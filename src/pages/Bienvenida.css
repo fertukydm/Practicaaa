@@ -1,0 +1,52 @@
+/* Contenedor general con fondo blanco por defecto */
+.welcome-container {
+    height: 100vh;
+    width: 100%;
+    background-color: #ff0077;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    min-width: 100vw;
+    position: relative;
+  }
+ 
+  /* Parpadeo del fondo cuando está en hover */
+  .flicker {
+    animation: flickerBackground 0.2s steps(1) infinite;
+  }
+ 
+  .welcome-image {
+    width: 100%;
+    max-width: 450px;  
+    height: auto;
+    margin: 0 auto 20px;
+    display: block;
+    border-radius: 10px;
+    cursor: pointer;
+    filter: none;
+  }
+ 
+ 
+ 
+  /* Cuando está en hover, invierte colores */
+  .flicker .welcome-image {
+    filter: invert(1);
+  }
+ 
+  /* Texto */
+  .welcome-text {
+    color: #8d2f75;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+  }
+ 
+  /* Parpadeo entre blanco y negro sin transiciones suaves */
+  @keyframes flickerBackground {
+    0%, 100% {
+      background-color: #ec71c7;
+    }
+    50% {
+      background-color: #ffffff;
+    }
+  }
