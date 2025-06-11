@@ -1,0 +1,7 @@
+body { margin: 0; font-family: sans-serif; padding: 1rem; }
+.welcome-container { text-align: center; margin-top: 5rem; }
+.card { background: #fff; }
+@media (min-width: 640px) {
+  .card { display: flex; justify-content: space-between; }
+}
+
